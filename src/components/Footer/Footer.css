@@ -1,0 +1,122 @@
+.footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.footer-container {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+  padding-bottom: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-column:last-child {
+  text-align: right;
+}
+.footer-sub-menu-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 51px;
+}
+
+.footer-column-header {
+  color: var(--dark-gray, #656566);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.column-item {
+  color: var(--light-text, #e4e5ea);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: var(--light-text, #e4e5ea);
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.policy-link a {
+  color: var(--light-text, #e4e5ea);
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.icons-group-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.phone-footer {
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 440px) {
+  .footer-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-column:last-child {
+    text-align: left;
+  }
+  .icons-group-footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .copyright {
+    align-items: flex-start;
+  }
+  .footer {
+    z-index: 999;
+    background-color: #0e1014;
+  }
+  .footer-sub-menu-column {
+    color: var(--light-text, #e4e5ea);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
